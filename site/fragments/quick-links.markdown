@@ -1,6 +1,6 @@
 ##Quick links
 
-[Get started](documentation.html)
+[Get started](documentation/index.html)
 
 [Install](download.html)
 

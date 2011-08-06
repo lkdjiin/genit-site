@@ -1,53 +1,35 @@
-<div id="page_title">
-  <div class="row">
-      <div class="column grid_16">
-        <h1>How to download and install Genit</h1>
-      </div>
-    </div>
+<genit var="page_title">How to download and install Genit</genit>
+
+<div class="article">
+  <h2>First install Ruby and rubygem</h2>
+  <p>
+    As Genit is written in Ruby, you need the Ruby interpreter to run it. You need rubygem too.
+    Rubygem is a marvelous Ruby application that acts as an installer.<br/>
+    Go to <a href="http://www.ruby-lang.org">www.ruby-lang.org</a> and follow the instructions...
+  </p>
 </div>
-  
-<div id="main"> 
-    <div class="row">
-      <div class="column grid_12" id="left-side">
-      
-        <div class="article">
-          <h2>First install Ruby and rubygem</h2>
-          <p>
-            As Genit is written in Ruby, you need the Ruby interpreter to run it. You need rubygem too.
-            Rubygem is a marvelous Ruby application that acts as an installer.<br/>
-            Go to <a href="http://www.ruby-lang.org">www.ruby-lang.org</a> and follow the instructions...
-          </p>
-        </div>
-        
-        <div class="article">
-          <h2>Download and install Genit</h2>
-          <p>Thanks to rubygem, downloading and installing Genit is as simple as opening a console and type:</p>
-          <pre><code>  gem instal genit</code></pre>
-          <p>All other dependencies will be downloaded and installed automatically.
-          </p>
-        </div>
-        
-        <div class="article">
-          <h2>Smoke test</h2>
-          <p>
-            This step is optional but performing the smoke test is a good thing to be sure
-            the installation is well done.<br/>
-            Open a console window and type:
-          </p>
-          <pre><code>
-  genit create test
-  cd test
-  genit compile</code></pre>
-          <p>
-            Then go to the <code>test/www/</code> folder and double click the index.html file.<br/>
-            That's it !
-          </p>
-        </div>
-        
-      </div>
-      <div class="column grid_4">
-        <div class="right-side-section"><genit class="fragment" file="quick-links.markdown"/></div>
-        <div class="right-side-section"><genit class="fragment" file="quick-licenses.markdown"/></div>
-      </div>
-    </div>
+
+<div class="article">
+  <h2>Download and install Genit</h2>
+  <p>Thanks to rubygem, downloading and installing Genit is as simple as opening a console and type:</p>
+  <pre><code>  gem instal genit</code></pre>
+  <p>All other dependencies will be downloaded and installed automatically.
+  </p>
+</div>
+
+<div class="article">
+  <h2>Smoke test</h2>
+  <p>
+    This step is optional but performing the smoke test is a good thing to be sure
+    the installation is well done.<br/>
+    Open a console window and type:
+  </p>
+  <pre><code>
+genit create test
+cd test
+genit compile</code></pre>
+  <p>
+    Then go to the <code>test/www/</code> folder and double click the index.html file.<br/>
+    That's it !
+  </p>
 </div>
