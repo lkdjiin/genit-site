@@ -133,7 +133,7 @@ In `templates/main.html`:
 Using Markdown
 -------------------------------------------------
 
-If a part a page doesn't need to use html tag attributes (id an class), markdown syntax is
+If a part of a page doesn't need to use html tag attributes (id an class), markdown syntax is
 much cleaner than html syntax. Why not using markdown ?
 
 Edit the index.html page as follow:
