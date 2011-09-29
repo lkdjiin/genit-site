@@ -52,7 +52,11 @@
   
   <li><a href="documentation/book-of-genit-fr.html#Javascript">8. Javascript</a></li>
   
-  <li><a href="documentation/book-of-genit-fr.html#RSS">9. Flux RSS</a> <span class="new_chapter">nouveau dans 0.99</span></li>
+  <li><a href="documentation/book-of-genit-fr.html#RSS">9. Flux RSS et sitemap</a> <span class="updated_in">mis à jour dans 1.0</span></li>
+  <ul>
+    <li><a href="documentation/book-of-genit-fr.html#RSS_feed">9.1 Le flux RSS</a></li>
+    <li><a href="documentation/book-of-genit-fr.html#Sitemap_xml">9.2 Le fichier sitemap.xml</a></li>
+  </ul>
 </ul>
 
 <!--
@@ -1663,10 +1667,18 @@ Si vous cliquez sur le lien, une jolie boite de dialogue s'ouvrira
 
 
 <!------------------------------------------------------------------------------------->
-<h2><a name="RSS">9. Flux RSS</a></h2>
+<h2><a name="RSS">9. Flux RSS et sitemap</a></h2>
 
 <p>
-À partir de la version 0.99, Genit peut créer le flux RSS des actualités de votre site. Ouvrez
+Genit peut créer le flux RSS des actualités de votre site. Il crée aussi automatiquement le
+fichier <code>sitemap.xml</code> de votre site web.
+</p>
+
+<!------------------------------------------------------------------------------------->
+<h3><a name="RSS_feed">9.1 Le flux RSS</a></h3>
+
+<p>
+Ouvrez
 le fichier de configuration de votre projet Genit, il s'agit d'un fichier caché à la racine
 du projet, nommé <code>.config</code> 
 (<a href="documentation/book-of-genit-fr.html#Listing_9.1">listing 9.1</a>) :
@@ -1706,6 +1718,7 @@ respectivement le titre et la description du flux RSS.<br/>
 </p>
 
 <p>
+Le fichier <code>rss.xml</code> sera créé dans le dossier <code>www</code>.
 Sur votre site vous pouvez lié le flux RSS avec une ligne comme la suivante
 (<a href="documentation/book-of-genit-fr.html#Listing_9.3">listing 9.3</a>) :
 </p>
@@ -1715,6 +1728,19 @@ Sur votre site vous pouvez lié le flux RSS avec une ligne comme la suivante
 <span class="style_1">&lt;a&nbsp;</span><span class="style_3">href</span><span class="style_8">=</span><span class="style_6">"rss.xml"</span><span class="style_1">&gt;</span><span class="style_0">RSS&nbsp;Feed</span><span class="style_1">&lt;/a&gt;</span><br />
 
 </p>
+
+
+<!------------------------------------------------------------------------------------->
+<h3><a name="Sitemap_xml">9.2 Le fichier sitemap.xml</a></h3>
+
+<p>
+Il suffit de donner l'adresse racine de votre site dans le fichier caché <code>.config</code>,
+comme vous avez fait à l'étape précédente
+(voir le <a href="documentation/book-of-genit-fr.html#Listing_9.2">listing 9.2</a>). Le fichier
+<code>sitemap.xml</code> sera généré automatiquement dans le dossier <code>www</code>.
+</p>
+
+
 
 
 </div> <!-- book -->
